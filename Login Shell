@@ -1,0 +1,1417 @@
+Ahmeds-iMac:contact-app ahmed$ ls
+app.js
+Ahmeds-iMac:contact-app ahmed$ npm init                         
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensibl​‌​
+e defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (contact-app)                                     
+version: (1.0.0)                                                
+description:                                                    
+entry point: (app.js)                                           
+test command:                                                   
+git repository:                                                 
+keywords:                                                       
+author: me                                                      
+license: (ISC)                                                  
+About to write to /Volumes/Projects/projects/contact-app/package​‌​
+.json:
+
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)                                               
+Ahmeds-iMac:contact-app ahmed$ npm install express -save        
+npm notice created a lockfile as package-lock.json. You should c​‌​
+ommit this file.
+npm WARN contact-app@1.0.0 No description
+npm WARN contact-app@1.0.0 No repository field.
+
++ express@4.17.1
+added 50 packages from 37 contributors and audited 126 packages ​‌​
+in 8.201s
+found 0 vulnerabilities
+
+Ahmeds-iMac:contact-app ahmed$ nodemon app                      
+[nodemon] 1.19.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/app.js:5
+app.use(express.static(__dirname+'/public'));s
+                                             ^
+
+ReferenceError: s is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:5:46)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/app.js:5
+app.use(express.static(__dirname+'/public'));s
+                                             ^
+
+ReferenceError: s is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:5:46)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/app.js:5
+app.use(express.static(__dirname+'/public'));s
+                                             ^
+
+ReferenceError: s is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:5:46)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+Listening to port 3000
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/node_modules/express/lib/​‌​
+router/index.js:458
+      throw new TypeError('Router.use() requires a middleware fu​‌​
+nction but got a ' + gettype(fn))
+      ^
+
+TypeError: Router.use() requires a middleware function but got a​‌​
+ Object
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/router/index.js:458:13)
+    at Function.<anonymous> (/Volumes/Projects/projects/contact-​‌​
+app/node_modules/express/lib/application.js:220:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/application.js:217:7)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:9:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:9
+                 number:'(111) 111-111';
+                                       ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:9
+                 number:'(111) 111-111';
+                                       ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:9
+                 number:'(111) 111-111';
+                                       ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:9
+                 number:'(111) 111-111';
+                                       ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+rs
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:9
+                 number:'(111) 111-111';
+                                       ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:2
+var router = express.router();
+                     ^
+
+TypeError: express.router is not a function
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+rs
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:2
+var router = express.router();
+                     ^
+
+TypeError: express.router is not a function
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/node_modules/express/lib/​‌​
+router/index.js:458
+      throw new TypeError('Router.use() requires a middleware fu​‌​
+nction but got a ' + gettype(fn))
+      ^
+
+TypeError: Router.use() requires a middleware function but got a​‌​
+ Object
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/router/index.js:458:13)
+    at Function.<anonymous> (/Volumes/Projects/projects/contact-​‌​
+app/node_modules/express/lib/application.js:220:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/application.js:217:7)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:9:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/node_modules/express/lib/​‌​
+router/index.js:458
+      throw new TypeError('Router.use() requires a middleware fu​‌​
+nction but got a ' + gettype(fn))
+      ^
+
+TypeError: Router.use() requires a middleware function but got a​‌​
+ Object
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/router/index.js:458:13)
+    at Function.<anonymous> (/Volumes/Projects/projects/contact-​‌​
+app/node_modules/express/lib/application.js:220:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/application.js:217:7)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:9:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+rs
+[nodemon] starting `node app.js`
+/Volumes/Projects/projects/contact-app/node_modules/express/lib/​‌​
+router/index.js:458
+      throw new TypeError('Router.use() requires a middleware fu​‌​
+nction but got a ' + gettype(fn))
+      ^
+
+TypeError: Router.use() requires a middleware function but got a​‌​
+ Object
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/router/index.js:458:13)
+    at Function.<anonymous> (/Volumes/Projects/projects/contact-​‌​
+app/node_modules/express/lib/application.js:220:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (/Volumes/Projects/projects/contact-app/node​‌​
+_modules/express/lib/application.js:217:7)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/app.js:9:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Volumes/Projects/projects/contact-ap​‌​
+p/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Volumes/Projects/projects/contact-ap​‌​
+p/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Volumes/Projects/projects/contact-ap​‌​
+p/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Volumes/Projects/projects/contact-ap​‌​
+p/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Volumes/Projects/projects/contact-ap​‌​
+p/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Volumes/Projects/projects/contact-ap​‌​
+p/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+^CAhmeds-iMac:contact-app ahmed$ 
+Ahmeds-iMac:contact-app ahmed$ npm start                        
+
+> contact-app@1.0.0 start /Volumes/Projects/projects/contact-app
+> nodemon server.js
+
+[nodemon] 1.19.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'mongojs'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:15)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'mongojs'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:15)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'mongojs'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:15)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'mongojs'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:15)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'mongojs'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:15)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+rs
+[nodemon] starting `node server.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'mongojs'
+    at Function.Module._resolveFilename (internal/modules/cjs/lo​‌​
+ader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562​‌​
+:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:2:15)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+rs
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:5
+var db = mongojs.db('contactlist',['contactlist']);
+                 ^
+
+TypeError: mongojs.db is not a function
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:5:18)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[ { _id: 5d6cdfa04a7159f243673bf8,
+    name: 'Ahmed',
+    email: 'ahmednasrullah77@gmail.com',
+    number: '111-1111-111' },
+  { _id: 5d6cdfec4a7159f243673bf9,
+    name: 'Ali Nizami',
+    email: 'alinizami@uos.com',
+    number: '222-2222-222' },
+  { _id: 5d6ce0174a7159f243673bfa,
+    name: 'Bilawal Hanif',
+    email: 'bilawalhanif@gmail.com',
+    number: '333-333-333' } ]
+[ { _id: 5d6cdfa04a7159f243673bf8,
+    name: 'Ahmed',
+    email: 'ahmednasrullah77@gmail.com',
+    number: '111-1111-111' },
+  { _id: 5d6cdfec4a7159f243673bf9,
+    name: 'Ali Nizami',
+    email: 'alinizami@uos.com',
+    number: '222-2222-222' },
+  { _id: 5d6ce0174a7159f243673bfa,
+    name: 'Bilawal Hanif',
+    email: 'bilawalhanif@gmail.com',
+    number: '333-333-333' } ]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[ { _id: 5d6cdfa04a7159f243673bf8,
+    name: 'Ahmed',
+    email: 'ahmednasrullah77@gmail.com',
+    number: '111-1111-111' },
+  { _id: 5d6cdfec4a7159f243673bf9,
+    name: 'Ali Nizami',
+    email: 'alinizami@uos.com',
+    number: '222-2222-222' },
+  { _id: 5d6ce0174a7159f243673bfa,
+    name: 'Bilawal Hanif',
+    email: 'bilawalhanif@gmail.com',
+    number: '333-333-333' } ]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[ { _id: 5d6cdfa04a7159f243673bf8,
+    name: 'Ahmed',
+    email: 'ahmednasrullah77@gmail.com',
+    number: '111-1111-111' },
+  { _id: 5d6cdfec4a7159f243673bf9,
+    name: 'Ali Nizami',
+    email: 'alinizami@uos.com',
+    number: '222-2222-222' },
+  { _id: 5d6ce0174a7159f243673bfa,
+    name: 'Bilawal Hanif',
+    email: 'bilawalhanif@gmail.com',
+    number: '333-333-333' } ]
+[ { _id: 5d6cdfa04a7159f243673bf8,
+    name: 'Ahmed',
+    email: 'ahmednasrullah77@gmail.com',
+    number: '111-1111-111' },
+  { _id: 5d6cdfec4a7159f243673bf9,
+    name: 'Ali Nizami',
+    email: 'alinizami@uos.com',
+    number: '222-2222-222' },
+  { _id: 5d6ce0174a7159f243673bfa,
+    name: 'Bilawal Hanif',
+    email: 'bilawalhanif@gmail.com',
+    number: '333-333-333' } ]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[ { _id: 5d6cdfa04a7159f243673bf8,
+    name: 'Ahmed',
+    email: 'ahmednasrullah77@gmail.com',
+    number: '111-1111-111' },
+  { _id: 5d6cdfec4a7159f243673bf9,
+    name: 'Ali Nizami',
+    email: 'alinizami@uos.com',
+    number: '222-2222-222' },
+  { _id: 5d6ce0174a7159f243673bfa,
+    name: 'Bilawal Hanif',
+    email: 'bilawalhanif@gmail.com',
+    number: '333-333-333' } ]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+rs
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:8
+app.use(bodyParser.json());
+^
+
+ReferenceError: app is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:8
+app.use(bodyParser.json());
+^
+
+ReferenceError: app is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+rs
+[nodemon] starting `node server.js`
+/Volumes/Projects/projects/contact-app/routes/contacts.js:8
+app.use(bodyParser.json());
+^
+
+ReferenceError: app is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/routes/contacts.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Volumes/Projects/projects/contact-app/server.js:4
+app.use(bodyParser.json());
+        ^
+
+ReferenceError: bodyParser is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/server.js:4:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Volumes/Projects/projects/contact-app/server.js:4
+app.use(bodyParser.json());
+        ^
+
+ReferenceError: bodyParser is not defined
+    at Object.<anonymous> (/Volumes/Projects/projects/contact-ap​‌​
+p/server.js:4:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loade​‌​
+r.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585​‌​
+:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:8​‌​
+29:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting​‌​
+...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+{ name: 'asfd', email: 'asdf', number: 'adsf' }
+{ name: 'asfd', email: 'asdf', number: 'adsf' }
+{ name: 'asfd', email: 'asdf', number: 'adsf' }
+{ name: 'asfd', email: 'asdf', number: 'adsf' }
+{ name: 'afsd', email: 'asdf', number: 'asdf' }
+rs
+[nodemon] starting `node server.js`
+Listening to port 3000
+{ name: 'sadf', email: 'asdfasdf', number: 'asdfasdfas' }
+{ name: 'sadf', email: 'asdfasdf', number: 'asdfasdfas' }
+{ name: 'sadf', email: 'asdfasdf', number: 'asdfasdfas' }
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening to port 3000

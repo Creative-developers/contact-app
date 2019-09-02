@@ -1,24 +1,52 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="contactApp">
 <head>
 	<title>Contact list App</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<h1>Contact List App</h1>
-<div class="controller" ng-controller="contactCtrl">
+<div class="container-fluid" ng-controller="contactCtrl as contact">
+	<h1>Contact List App</h1>
 	 <table class="table">
 	 	  <thead>
 	 	  	 <tr>
 	 	  	 	  <th>Name</th>
 	 	  	 	  <th>Email</th>
 	 	  	 	  <th>Number</th>
+	 	  	 	  <th>Options</th>
 	 	  	 </tr>
 	 	  </thead>
+	 	  <tbody>
+	 	  	<tr>
+
+	 	  	   <td><input class="form-control" ng-model="contact.contactDetails.name" /></td>
+	 	  	   <td><input class="form-control" ng-model="contact.contactDetails.email" /></td>
+	 	  	   <td><input class="form-control" ng-model="contact.contactDetails.number" /></td>
+	 	  	   <td ng-if="!contact.updateContact">
+	 	  	   	  <button type="button" class="btn btn-primary" ng-click="contact.addContact()">Add Contact</button>
+	 	  	   	  <button class="btn btn-danger" type="button" ng-click="contact.clear()">Clear</button>
+	 	  	   </td>
+	 	  	   <td ng-if="contact.updateContact == true">
+                 <button class="btn btn-info" type="button" ng-click="contact.update()">Update Contact</button>
+                 <button class="glyphicon glyphicon-remove-circle btn btn-danger" type="button" ng-click="contact.clear()"></button>
+	 	  	   </td>
+
+	 	  	</tr>
+	 	  	<tr ng-repeat="cont in contact.contactLists">
+		 	  		<td>{{ cont.name }}</td>
+		 	  		<td>{{ cont.email }}</td>
+		 	  		<td>{{ cont.number }}</td>
+		 	  		<td>
+		 	  			<button class="btn btn-danger" ng-click="contact.remove(cont._id)">Remove</button>
+		 	  		    <button class="btn btn-warning" ng-click="contact.edit(cont._id)">Edit</button>
+		 	  	  </td>
+	 	  	</tr>
+	 	  </tbody>
 	 </table>
 </div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript" src="controllers/controller.js"></script>
 </body>
 </html>
